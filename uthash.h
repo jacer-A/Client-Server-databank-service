@@ -1204,7 +1204,7 @@ typedef struct UT_hash_table {
     * positions. If this happens on two consecutive expansions we inhibit any
     * further expansion, as it's not helping; this happens when the hash
     * function isn't a good fit for the key domain. When expansion is inhibited
-    * the hash will still work, albeit no longer in constant time. */
+    * the hash will still work, albeit no longer in constant time.. */
    unsigned ineff_expands, noexpand;
 
    uint32_t signature; /* used only to find hash tables in external analysis */

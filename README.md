@@ -9,6 +9,6 @@ Server offers a key-value-databank that a Client can manage with the orders: Set
 - Get() and Delete() requests contain only a Key, so the length of Value is set to 0. Responses to Get() requests contain Key and Value, the other responses contain neither key nor Value.
 - As parameter the server should get the port number. Example:
     ./server 4999
-- The client should be passed the DNS-name or IP address of the server, the port,  the method (SET, GET, DELETE) and the key as command line arguments. Examples:
+- The client should be passed the DNS-name or IP address of the server, the port,  the method (SET, GET, DELETE) and the key as command line arguments. Example:
     ./client localhost 4999 SET selfie < selfie.jpg
 - The database is able to work with any type of data as key or value
